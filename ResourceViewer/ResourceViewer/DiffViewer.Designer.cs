@@ -30,6 +30,9 @@
 			this.FileSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.FileType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.AssetFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.toolstrip_ExtractOriginal = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolstrip_ExtractNew = new System.Windows.Forms.ToolStripMenuItem();
 			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
 			this.button_LoadFile1 = new System.Windows.Forms.Button();
 			this.button_LoadFile2 = new System.Windows.Forms.Button();
@@ -41,9 +44,6 @@
 			this.checkbox_Changed = new System.Windows.Forms.CheckBox();
 			this.checkbox_Added = new System.Windows.Forms.CheckBox();
 			this.checkbox_Removed = new System.Windows.Forms.CheckBox();
-			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this.toolstrip_ExtractOriginal = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolstrip_ExtractNew = new System.Windows.Forms.ToolStripMenuItem();
 			this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
 			this.contextMenuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -65,7 +65,7 @@
 			this.listview_Main.HideSelection = false;
 			this.listview_Main.Location = new System.Drawing.Point(12, 93);
 			this.listview_Main.Name = "listview_Main";
-			this.listview_Main.Size = new System.Drawing.Size(480, 437);
+			this.listview_Main.Size = new System.Drawing.Size(489, 437);
 			this.listview_Main.SmallImageList = this.imageList1;
 			this.listview_Main.Sorting = System.Windows.Forms.SortOrder.Ascending;
 			this.listview_Main.TabIndex = 5;
@@ -77,7 +77,7 @@
 			// FileName
 			// 
 			this.FileName.Text = "File Name";
-			this.FileName.Width = 541;
+			this.FileName.Width = 219;
 			// 
 			// FileSize
 			// 
@@ -93,6 +93,28 @@
 			// 
 			this.AssetFile.Text = "Asset File";
 			this.AssetFile.Width = 120;
+			// 
+			// contextMenuStrip1
+			// 
+			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolstrip_ExtractOriginal,
+            this.toolstrip_ExtractNew});
+			this.contextMenuStrip1.Name = "contextMenuStrip1";
+			this.contextMenuStrip1.Size = new System.Drawing.Size(205, 48);
+			// 
+			// toolstrip_ExtractOriginal
+			// 
+			this.toolstrip_ExtractOriginal.Name = "toolstrip_ExtractOriginal";
+			this.toolstrip_ExtractOriginal.Size = new System.Drawing.Size(204, 22);
+			this.toolstrip_ExtractOriginal.Text = "Extract from &Original File";
+			this.toolstrip_ExtractOriginal.Click += new System.EventHandler(this.toolstrip_ExtractOriginal_Click);
+			// 
+			// toolstrip_ExtractNew
+			// 
+			this.toolstrip_ExtractNew.Name = "toolstrip_ExtractNew";
+			this.toolstrip_ExtractNew.Size = new System.Drawing.Size(204, 22);
+			this.toolstrip_ExtractNew.Text = "Extract from &New File";
+			this.toolstrip_ExtractNew.Click += new System.EventHandler(this.toolstrip_ExtractNew_Click);
 			// 
 			// imageList1
 			// 
@@ -131,7 +153,7 @@
 			this.textBox1.Location = new System.Drawing.Point(119, 12);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.ReadOnly = true;
-			this.textBox1.Size = new System.Drawing.Size(373, 20);
+			this.textBox1.Size = new System.Drawing.Size(382, 20);
 			this.textBox1.TabIndex = 8;
 			// 
 			// textBox2
@@ -142,7 +164,7 @@
 			this.textBox2.Location = new System.Drawing.Point(119, 42);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.ReadOnly = true;
-			this.textBox2.Size = new System.Drawing.Size(373, 20);
+			this.textBox2.Size = new System.Drawing.Size(382, 20);
 			this.textBox2.TabIndex = 9;
 			// 
 			// openFileDialog1
@@ -209,33 +231,11 @@
 			this.checkbox_Removed.UseVisualStyleBackColor = true;
 			this.checkbox_Removed.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
 			// 
-			// contextMenuStrip1
-			// 
-			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolstrip_ExtractOriginal,
-            this.toolstrip_ExtractNew});
-			this.contextMenuStrip1.Name = "contextMenuStrip1";
-			this.contextMenuStrip1.Size = new System.Drawing.Size(205, 48);
-			// 
-			// toolstrip_ExtractOriginal
-			// 
-			this.toolstrip_ExtractOriginal.Name = "toolstrip_ExtractOriginal";
-			this.toolstrip_ExtractOriginal.Size = new System.Drawing.Size(204, 22);
-			this.toolstrip_ExtractOriginal.Text = "Extract from &Original File";
-			this.toolstrip_ExtractOriginal.Click += new System.EventHandler(this.toolstrip_ExtractOriginal_Click);
-			// 
-			// toolstrip_ExtractNew
-			// 
-			this.toolstrip_ExtractNew.Name = "toolstrip_ExtractNew";
-			this.toolstrip_ExtractNew.Size = new System.Drawing.Size(204, 22);
-			this.toolstrip_ExtractNew.Text = "Extract from &New File";
-			this.toolstrip_ExtractNew.Click += new System.EventHandler(this.toolstrip_ExtractNew_Click);
-			// 
 			// DiffViewer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(504, 542);
+			this.ClientSize = new System.Drawing.Size(513, 542);
 			this.Controls.Add(this.checkbox_Removed);
 			this.Controls.Add(this.checkbox_Added);
 			this.Controls.Add(this.checkbox_Changed);

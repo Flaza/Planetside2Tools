@@ -88,7 +88,7 @@
             this.helpToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(808, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(812, 24);
 			this.menuStrip1.TabIndex = 3;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -144,7 +144,8 @@
 			// viewDiffToolStripMenuItem
 			// 
 			this.viewDiffToolStripMenuItem.Name = "viewDiffToolStripMenuItem";
-			this.viewDiffToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+			this.viewDiffToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+			this.viewDiffToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
 			this.viewDiffToolStripMenuItem.Text = "&Diff Viewer";
 			this.viewDiffToolStripMenuItem.Click += new System.EventHandler(this.viewDiffToolStripMenuItem_Click);
 			// 
@@ -152,7 +153,7 @@
 			// 
 			this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
 			this.searchToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-			this.searchToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+			this.searchToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
 			this.searchToolStripMenuItem.Text = "&Search";
 			this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
 			// 
@@ -195,7 +196,7 @@
 			this.listview_Main.HideSelection = false;
 			this.listview_Main.Location = new System.Drawing.Point(0, 0);
 			this.listview_Main.Name = "listview_Main";
-			this.listview_Main.Size = new System.Drawing.Size(808, 220);
+			this.listview_Main.Size = new System.Drawing.Size(812, 220);
 			this.listview_Main.Sorting = System.Windows.Forms.SortOrder.Ascending;
 			this.listview_Main.TabIndex = 4;
 			this.listview_Main.UseCompatibleStateImageBehavior = false;
@@ -243,9 +244,9 @@
             this.progressbar_Main,
             this.statuslabel_Main,
             this.label_SearchResults});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 454);
+			this.statusStrip1.Location = new System.Drawing.Point(0, 455);
 			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(808, 22);
+			this.statusStrip1.Size = new System.Drawing.Size(812, 22);
 			this.statusStrip1.TabIndex = 5;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
@@ -289,7 +290,7 @@
 			// 
 			this.splitContainer1.Panel2.Controls.Add(this.toolStrip1);
 			this.splitContainer1.Panel2.Controls.Add(this.listview_Search);
-			this.splitContainer1.Size = new System.Drawing.Size(808, 430);
+			this.splitContainer1.Size = new System.Drawing.Size(812, 431);
 			this.splitContainer1.SplitterDistance = 220;
 			this.splitContainer1.SplitterWidth = 10;
 			this.splitContainer1.TabIndex = 7;
@@ -304,12 +305,13 @@
             this.toolStripSplitButton1});
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.Size = new System.Drawing.Size(808, 25);
+			this.toolStrip1.Size = new System.Drawing.Size(812, 25);
 			this.toolStrip1.TabIndex = 6;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
 			// toolStripLabel1
 			// 
+			this.toolStripLabel1.BackColor = System.Drawing.Color.Transparent;
 			this.toolStripLabel1.Name = "toolStripLabel1";
 			this.toolStripLabel1.Size = new System.Drawing.Size(68, 22);
 			this.toolStripLabel1.Text = "Search For: ";
@@ -369,7 +371,7 @@
 			this.listview_Search.HideSelection = false;
 			this.listview_Search.Location = new System.Drawing.Point(0, 28);
 			this.listview_Search.Name = "listview_Search";
-			this.listview_Search.Size = new System.Drawing.Size(808, 150);
+			this.listview_Search.Size = new System.Drawing.Size(812, 145);
 			this.listview_Search.Sorting = System.Windows.Forms.SortOrder.Ascending;
 			this.listview_Search.TabIndex = 5;
 			this.listview_Search.UseCompatibleStateImageBehavior = false;
@@ -414,10 +416,11 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(808, 476);
+			this.ClientSize = new System.Drawing.Size(812, 477);
 			this.Controls.Add(this.splitContainer1);
 			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.menuStrip1);
+			this.MinimumSize = new System.Drawing.Size(545, 515);
 			this.Name = "PackViewer";
 			this.Text = ".Pack Viewer";
 			this.menuStrip1.ResumeLayout(false);

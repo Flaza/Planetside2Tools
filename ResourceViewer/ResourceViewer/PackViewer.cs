@@ -40,6 +40,7 @@ namespace ResourceViewer {
 				String[] filenameParts = files[f].Split(Path.DirectorySeparatorChar);
 
 				statuslabel_Main.Text = String.Format("Loading {0} ({1} of {2}) ", filenameParts[filenameParts.Length - 1], progressbar_Main.Value, files.Length);
+				statuslabel_Main.Visible = true;
 
 				PackFile loadedFile = new PackFile(filename);
 
