@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ResourceViewer")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle(".Pack Viewer")]
+[assembly: AssemblyDescription("Tools to view H1Z1 .pack files. Original unpacking code by RoyAwesome (https://github.com/RoyAwesome)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("ResourceViewer")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
+[assembly: AssemblyCompany("MajorVictory")]
+[assembly: AssemblyProduct(".Pack Resource Viewer")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
